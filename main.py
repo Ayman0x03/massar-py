@@ -31,8 +31,8 @@ csrf = etree.fromstring(tokenRequest.text , parser)
 csrftoken = csrf.xpath('//form/input[@name="__RequestVerificationToken"]/@value')[0]
 #uid ,Pass = "user@taalim.ma", "password" # for full autonomy fill this line
 #       $Ask for creds$
-uid=input("Username):")                   #And comment this line
-Pass=input("Password:")
+uid=input("Username:")                   #And comment this line
+Pass=input("Password:")                  #And this one
 #       $Better : read creds from file
 #             f=open("Creds.txt","r")
 #             lines=f.readlines()
